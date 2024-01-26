@@ -11,6 +11,10 @@
     "db:migrate": "ts-node ./migrate.ts"
   },
   "devDependencies": {
+    "@projectx/eslint-config": "workspace:^",
+    "@projectx/prettier-config": "workspace:^",
+    "@projectx/tailwind-config": "workspace:^",
+    "@projectx/tsconfig": "workspace:^",
     "drizzle-kit": "^0.20.13",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

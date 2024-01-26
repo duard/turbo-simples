@@ -1,5 +1,5 @@
 export function linkConstructor({
-  domain = "simples.sh",
+  domain = "dub.sh",
   key,
   localhost,
   pretty,

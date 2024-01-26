@@ -38,7 +38,7 @@ export const FADE_IN_ANIMATION_SETTINGS = {
 export const PAGINATION_LIMIT = 100;
 
 export const SHORT_DOMAIN =
-  process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "simples.sh";
+  process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "dub.sh";
 
 export const HOME_DOMAIN = `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`;
 
@@ -82,31 +82,31 @@ export const ADMIN_HOSTNAMES = new Set([
 ]);
 
 export const DEFAULT_REDIRECTS = {
-  home: "https://simples.co",
-  simples: "https://simples.co",
-  signin: "https://app.simples.co/login",
-  login: "https://app.simples.co/login",
-  register: "https://app.simples.co/register",
-  signup: "https://app.simples.co/register",
-  app: "https://app.simples.co",
-  dashboard: "https://app.simples.co",
-  links: "https://app.simples.co/links",
-  settings: "https://app.simples.co/settings",
-  welcome: "https://app.simples.co/welcome",
-  discord: "https://twitter.com/simplesdotco", // placeholder for now
+  home: "https://dub.co",
+  dub: "https://dub.co",
+  signin: "https://app.dub.co/login",
+  login: "https://app.dub.co/login",
+  register: "https://app.dub.co/register",
+  signup: "https://app.dub.co/register",
+  app: "https://app.dub.co",
+  dashboard: "https://app.dub.co",
+  links: "https://app.dub.co/links",
+  settings: "https://app.dub.co/settings",
+  welcome: "https://app.dub.co/welcome",
+  discord: "https://twitter.com/dubdotco", // placeholder for now
 };
 
-export const SIMPLES_HEADERS = {
+export const DUB_HEADERS = {
   headers: {
-    "x-powered-by": "Simples.co - Link management for modern marketing teams",
+    "x-powered-by": "Dub.co - Link management for modern marketing teams",
   },
 };
 
 export const GOOGLE_FAVICON_URL =
   "https://www.google.com/s2/favicons?sz=64&domain_url=";
 
-export const SIMPLES_LOGO = "https://d2vwwcvoksz7ty.cloudfront.net/logo.png";
-export const SIMPLES_THUMBNAIL =
+export const DUB_LOGO = "https://d2vwwcvoksz7ty.cloudfront.net/logo.png";
+export const DUB_THUMBNAIL =
   "https://d2vwwcvoksz7ty.cloudfront.net/thumbnail.png";
 
 export const HIDE_BACKGROUND_SEGMENTS = [
@@ -117,7 +117,7 @@ export const HIDE_BACKGROUND_SEGMENTS = [
   "abuse",
 ];
 
-export const SIMPLES_DOMAINS = [
+export const DUB_DOMAINS = [
   {
     slug: SHORT_DOMAIN,
     verified: true,
@@ -125,18 +125,18 @@ export const SIMPLES_DOMAINS = [
     archived: false,
     target: `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`,
     type: "redirect",
-    placeholder: "https://simples.co/help/article/what-is-simples",
+    placeholder: "https://dub.co/help/article/what-is-dub",
     clicks: 0,
     allowedHostnames: [],
   },
-  ...(process.env.NEXT_PUBLIC_IS_SIMPLES
+  ...(process.env.NEXT_PUBLIC_IS_DUB
     ? [
         {
           slug: "chatg.pt",
           verified: true,
           primary: false,
           archived: false,
-          target: "https://simples.co/tools/chatgpt-link-shortener",
+          target: "https://dub.co/tools/chatgpt-link-shortener",
           type: "redirect",
           placeholder: "https://chat.openai.com/g/g-UGjKKONEe-domainsgpt",
           clicks: 0,
@@ -147,7 +147,7 @@ export const SIMPLES_DOMAINS = [
           verified: true,
           primary: false,
           archived: false,
-          target: "https://simples.co/tools/amazon-link-shortener",
+          target: "https://dub.co/tools/amazon-link-shortener",
           type: "redirect",
           placeholder: "https://www.amazon.com/dp/B0BW4SWNC8",
           clicks: 0,
@@ -158,7 +158,7 @@ export const SIMPLES_DOMAINS = [
           verified: true,
           primary: false,
           archived: false,
-          target: "https://simples.co/tools/spotify-link-shortener",
+          target: "https://dub.co/tools/spotify-link-shortener",
           type: "redirect",
           placeholder: "https://open.spotify.com/album/1SCyi9a5pOasikidToUY5y",
           clicks: 0,
@@ -220,7 +220,7 @@ export const DEFAULT_LINK_PROPS = {
   proxy: false,
 };
 
-export const SIMPLES_PROJECT_ID = "cl7pj5kq4006835rbjlt2ofka";
+export const DUB_PROJECT_ID = "cl7pj5kq4006835rbjlt2ofka";
 export const LEGAL_PROJECT_ID = "clrflia0j0000vs7sqfhz9c7q";
 export const LEGAL_USER_ID = "clqei1lgc0000vsnzi01pbf47";
 

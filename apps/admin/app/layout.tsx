@@ -1,9 +1,14 @@
 import "@/styles/globals.css";
 
 import { fontHeading, fontSans, fontUrban } from "@/assets/fonts";
-import { siteConfig } from "@/config/site";
-import { cn } from "@repo/utils";
 
+import { Analytics } from "@/components/analytics";
+import { ModalProvider } from "@/components/modal-provider";
+import { Providers } from "@/components/providers";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { Toaster } from "@/components/ui/toaster";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -21,7 +26,7 @@ export const metadata = {
       name: "christer",
     },
   ],
-  creator: "simplesempresa",
+  creator: "codehagen",
   metadataBase: new URL(siteConfig.url),
   openGraph: {
     type: "website",
@@ -36,7 +41,7 @@ export const metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@simplesempresa",
+    creator: "@codehagen",
   },
   icons: {
     icon: "/favicon.ico",
@@ -52,7 +57,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased  no-scrollbar",
+          "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
           fontUrban.variable,
           fontHeading.variable,
