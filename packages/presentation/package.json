@@ -3,12 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./src": "./src/*",
-    "./shadcn": "./src/shadcn/index.ts",
-    "./components": "./src/components",
-    "./button": "./src/shadcn/button.tsx",
-    "./providers": "./src/components/providers.tsx",
-    "./analytics": "./src/components/analytics.tsx"
+    "./presentation": "./src/index.ts",
+    "./hooks": "./src/hocks/index.ts",
+    "./components": "./src/components/index.ts",
+    ".": "./src/index.tsx",
+    "./dialog": "./src/components/dialog.tsx",
+    "./accordion": "./src/components/accordion.tsx",
+    "./toast": "./src/components/toast.tsx",
+    "./use-toast": "./src/hooks/use-toast.ts",
+    "./icons": {
+      "import": "./src/icons/index.tsx",
+      "types": "./src/icons/index.d.ts"
+    },
+    "./styles/shared-globals.css": "./src/styles/shared-globals.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -34,7 +41,6 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@repo/utils": "workspace:*",
     "@faker-js/faker": "^8.4.0",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
@@ -73,6 +79,7 @@
     "@react-email/button": "0.0.11",
     "@react-email/components": "0.0.7",
     "@react-email/html": "0.0.6",
+    "@repo/utils": "workspace:*",
     "@t3-oss/env-nextjs": "^0.7.3",
     "@tanstack/react-table": "^8.11.7",
     "@typescript-eslint/parser": "^6.19.1",
@@ -100,6 +107,7 @@
     "react-hook-form": "^7.49.3",
     "react-resizable-panels": "^1.0.9",
     "react-wrap-balancer": "^1.1.0",
+    "vaul": "^0.7.7",
     "zustand": "^4.5.0"
   }
 }

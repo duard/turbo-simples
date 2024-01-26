@@ -1,6 +1,6 @@
-import { ToastProps } from "@radix-ui/react-toast";
 import React from "react";
-import { ToastActionElement } from "../shadcn/toast";
+import { ToastActionElement, ToastProps } from "../components/ui/toast";
+
 
 const TOAST_LIMIT = 1;
 const TOAST_REMOVE_DELAY = 1000000;
